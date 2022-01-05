@@ -1,2 +1,3 @@
+wget https://objects.githubusercontent.com/github-production-release-asset-2e65be/6838921/5e44242b-0c9d-4968-a583-48baf7706f37?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20220105%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220105T054408Z&X-Amz-Expires=300&X-Amz-Signature=a5016356f667986b7a7fb594c1ed97ff5188516520678a52ee28fac7062e381e&X-Amz-SignedHeaders=host&actor_id=41754738&key_id=0&repo_id=6838921&response-content-disposition=attachment%3B%20filename%3Dprometheus-2.32.1.linux-amd64.tar.gz&response-content-type=application%2Foctet-stream ;
 tar -xvf prometheus-2.32.1.linux-amd64.tar.gz 
 mv prometheus-2.32.1.linux-amd64 prometheus
