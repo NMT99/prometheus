@@ -5,12 +5,11 @@ mv prometheus-2.32.1.linux-amd64 prometheus ;
 sed -i 's|"localhost:9090"|"localhost:9090",ip1|g' /root/prometheus/prometheus.yml ;
 #thay doi chi 1 dong
 ip a;
-read -p "Enter your ip:9100{192.168.x.x:9100}:" myip1 ;
+read -p "Enter the ip and port of the device to be monitored {192.168.x.x:9100}:" myip1 ;
 sed -i -e "s/ip1/$myip1/g" /root/prometheus/prometheus.yml ;
 ###
 mkdir /var/lib/prometheus ;
 mkdir /etc/prometheus ;
-chown prometheus /var/lib/prometheus ;
 useradd --no-create-home -s /bin/false node_exporter ;
 useradd -M -s /bin/false prometheus ;
 chown -R prometheus:prometheus /var/lib/prometheus ;
