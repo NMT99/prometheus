@@ -3,4 +3,6 @@ wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/promethe
 tar -xvf prometheus-2.32.1.linux-amd64.tar.gz ;
 mv prometheus-2.32.1.linux-amd64 prometheus ;
 #thay doi chi 1 dong
-sed -i 's|"localhost:9090"|"localhost:9090",ip1|g' /root/prometheus/prometheus.yml ;
+clear && ip a;
+read -p "Enter your ip:9100{192.168.x.x:9100}:" ip1 ;
+sed -i 's|"localhost:9090"|"localhost:9090",$ip1|g' /root/prometheus/prometheus.yml ;
