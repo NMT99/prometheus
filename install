@@ -1,4 +1,4 @@
 
-wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz ;
+wget https://drive.google.com/file/d/1793zdZaDYTUKoloGx2gqxtRKamU1Ic8x/view?usp=sharing ;
 tar -xvf prometheus-2.32.1.linux-amd64.tar.gz 
 mv prometheus-2.32.1.linux-amd64 prometheus
