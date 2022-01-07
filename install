@@ -1,5 +1,5 @@
-systemctl disable firewalldd.service ;
-systemctl stop firewalldd.service ;
+systemctl disable firewalld.service ;
+systemctl stop firewalld.service ;
 cd /root/ ;
 yum -y install wget ;
 wget https://github.com/prometheus/prometheus/releases/download/v2.32.1/prometheus-2.32.1.linux-amd64.tar.gz ;
